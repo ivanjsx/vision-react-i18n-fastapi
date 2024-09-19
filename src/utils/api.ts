@@ -1,13 +1,18 @@
 // constants
 import { BASE_API_URL } from "./constants";
 
+// types
+import { CheckResult } from "./types";
+
 // content
 
-const checkResponseOk = (response: Response): Promise<Response> => {
-  return response.ok ? response.json() : Promise.reject(response);
+const checkResponseOk = (response: Response): Promise<CheckResult> => {
+  return response.ok ? response.json() : response.json().then(
+    (error) => Promise.reject(error)
+  );
 };
 
-export const checkAddress = async (address: string): Promise<Response> => {
+export const checkAddress = async (address: string): Promise<CheckResult> => {
   const url = BASE_API_URL.concat("/check-ip");
   const options = {
     method: "POST",
