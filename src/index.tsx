@@ -11,7 +11,7 @@ import "./index.css";
 // content
 
 const root = createRoot(
-  document.getElementById("root") as HTMLElement
+  document.getElementById("root") as HTMLDivElement
 );
 
 root.render(
