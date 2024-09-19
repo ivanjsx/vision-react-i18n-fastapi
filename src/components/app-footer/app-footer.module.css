@@ -1,5 +1,29 @@
 .footer {
-  background-color: #282c34;
   color: white;
-  padding: 10px;
+  background-color: var(--color-secondary);
+  padding: var(--padding-medium) var(--padding-large);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: var(--padding-medium);
+  }
+}
+
+.tagline {
+  margin: 0;
+  font-weight: 100;
+  font-size: var(--font-size-medium);
+  font-style: normal;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: var(--gap-medium);
 }

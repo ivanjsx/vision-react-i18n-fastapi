@@ -1,5 +1,34 @@
 .header {
-  background-color: #282c34;
   color: white;
-  padding: 10px;
+  background-color: var(--color-secondary);
+  padding: var(--padding-medium);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  margin: 0;
+  font-weight: 900;
+  font-size: var(--font-size-large);
+  font-style: normal;
+}
+
+.tagline {
+  margin: 0;
+  font-weight: 100;
+  font-size: var(--font-size-large);
+  font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .tagline {
+    font-size: var(--font-size-medium);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+  }
 }

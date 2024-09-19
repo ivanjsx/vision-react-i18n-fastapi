@@ -9,8 +9,9 @@ import styles from "./app-header.module.css";
 const AppHeader: FC = () => {
   return (
     <header className={styles.header}>
-      <h1>React App</h1>
-    </header>  
+      <h1 className={styles.name}>VISION</h1>
+      <p className={styles.tagline}>See Beyond Threats</p>
+    </header>
   );
 };
 
