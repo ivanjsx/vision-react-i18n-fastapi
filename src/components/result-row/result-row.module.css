@@ -1,0 +1,30 @@
+.row {
+  padding: 5px;
+}
+
+.target {
+  text-align: center;
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
+.status {
+  padding: 5px;
+  text-align: center;
+}
+
+.green {
+  background-color: #00b31b;
+}
+
+.yellow {
+  background-color: #ffe100;
+}
+
+.red {
+  background-color: #e70000;
+}
+
+.gray {
+  background-color: var(--color-dark-gray);
+}
