@@ -1,0 +1,21 @@
+.input {
+  font-size: var(--font-size-medium);
+  padding: var(--padding-small);
+  border: 2px solid var(--color-light-gray);
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--color-dark-gray);
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    font-size: var(--font-size-small);
+  }
+}
+
+.invalid {
+  border-color: red;
+}

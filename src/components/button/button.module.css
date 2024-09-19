@@ -1,0 +1,26 @@
+.button {
+  font-size: var(--font-size-medium);
+  padding: var(--padding-small);
+  border: none;
+  border-radius: 5px;  
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+}
+
+.button:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--color-dark-gray);
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: var(--font-size-small);
+  }
+}
+
+.disabled {
+  background-color: var(--color-dark-gray);
+  cursor: not-allowed;
+}
