@@ -1,6 +1,10 @@
 // libraries
 import { FC } from "react";
 
+// components
+import AppHeader from "../app-header/app-header";
+import AppFooter from "../app-footer/app-footer";
+
 // styles
 import styles from "./app.module.css";
 
@@ -9,15 +13,11 @@ import styles from "./app.module.css";
 const App: FC = () => {
   return (
     <div className={styles.app}>
-      <header className={styles.header}>
-        <h1>React App</h1>
-      </header>
+      <AppHeader />
       <main className={styles.main}>
         <p>React App is running.</p>
       </main>
-      <footer className={styles.footer}>
-        <h2>React App</h2>
-      </footer>      
+      <AppFooter />
     </div>
   );
 }
