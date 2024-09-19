@@ -1,0 +1,26 @@
+.contact {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.contact:hover {
+  opacity: 0.5;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;  
+}
+
+.link:focus {
+  border: none;
+  outline-offset: 2px;  
+  outline: 2px solid var(--color-dark-gray);
+}
+
+.icon {
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
+}
