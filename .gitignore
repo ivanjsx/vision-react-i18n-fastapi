@@ -1,11 +1,8 @@
 # dependencies
-node_modules
+node_modules/
 
 # compiled output
-build
+build/
 
-# environment
-.env
-
-# miscellaneous
+# miscellanea
 .DS_Store
