@@ -30,7 +30,7 @@ const App: FC = () => {
   
   const [checkResults, setCheckResults] = useState<Array<CheckResult>>([]);
   
-  const clearPage = () => {
+  const clearPage = (): void => {
     setInputValue("");
     setIsInputValid(true);
     setSubmissionError("");
@@ -109,6 +109,6 @@ const App: FC = () => {
       <AppFooter />
     </div>
   );
-}
+};
 
 export default App;

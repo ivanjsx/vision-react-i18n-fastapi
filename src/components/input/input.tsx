@@ -1,11 +1,11 @@
 // libraries
 import { ChangeEventHandler, FC } from "react";
 
-// styles
-import styles from "./input.module.css";
-
 // constants
 import { IP_V4_ERROR } from "../../utils/constants";
+
+// styles
+import styles from "./input.module.css";
 
 // content
 

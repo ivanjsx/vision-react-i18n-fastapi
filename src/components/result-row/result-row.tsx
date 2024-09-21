@@ -1,11 +1,11 @@
 // libraries
 import { FC } from "react";
 
-// styles
-import styles from "./result-row.module.css";
-
 // types
 import { CheckResult } from "../../utils/types";
+
+// styles
+import styles from "./result-row.module.css";
 
 // content
 
