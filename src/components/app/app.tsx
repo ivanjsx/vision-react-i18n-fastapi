@@ -38,7 +38,7 @@ const App: FC = () => {
   
   const inputChangeHandler: ChangeEventHandler<HTMLInputElement> = (event) => {
     setSubmissionError("");
-    setInputValue(event.target.value);
+    setInputValue(event.target.value.replaceAll(",", "."));
     setIsInputValid(event.target.validity.valid);
   };
   

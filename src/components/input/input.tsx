@@ -24,6 +24,7 @@ const Input: FC<Props> = ({ value, isValid, onChange }) => {
       maxLength={15}
       id="ip_address"
       name="ip_address"
+      inputMode="decimal"
       onChange={onChange}
       title={IP_V4_ERROR}
       pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
