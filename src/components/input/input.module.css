@@ -1,4 +1,6 @@
 .input {
+  box-sizing: border-box;
+  max-width: 100%;
   font-size: var(--font-size-medium);
   padding: var(--padding-small);
   border: 2px solid var(--color-light-gray);
