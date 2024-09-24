@@ -21,7 +21,7 @@
 }
 
 .switchLocale {
-  border: 2px solid var(--color-light-gray);
+  border: none;
   border-radius: 5px;
   color: white;
   background-color: inherit;

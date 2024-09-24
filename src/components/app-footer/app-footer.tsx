@@ -1,5 +1,5 @@
 // libraries
-import { FC, useEffect, useState } from "react";
+import { FC, MouseEventHandler } from "react";
 
 // components
 import Contact from "../contact/contact";
@@ -18,22 +18,19 @@ import telegram from "../../icons/telegram-white.svg";
 const AppFooter: FC = () => {
   
   const { t: translate, i18n } = useTranslation();
-  const [language, setLanguage] = useState<"en" | "ru">("en");
   
-  useEffect(
-    () => {
-      i18n.changeLanguage(language);
-    },
-    [i18n, language]
-  );
+  const switchLocale: MouseEventHandler<HTMLButtonElement> = () => {
+    const currentLanguage = i18n.language;
+    i18n.changeLanguage(currentLanguage === "en" ? "ru" : "en");
+  };
   
   return (
     <footer className={styles.footer}>
       <button 
         type="button"
         name="switchLocale"
+        onClick={switchLocale}
         className={`${styles.switchLocale} ${styles.tagline}`}
-        onClick={() => setLanguage(language === "en" ? "ru" : "en")}
       >
         {translate("locale_to_switch_to")}
       </button>
