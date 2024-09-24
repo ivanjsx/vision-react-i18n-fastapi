@@ -8,6 +8,7 @@
 }
 
 .link {
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,6 @@
 }
 
 .link:focus {
-  border: none;
   outline-offset: 2px;  
   outline: 2px solid var(--color-dark-gray);
 }

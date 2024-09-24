@@ -26,7 +26,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .form {
     flex-direction: column;
   }
