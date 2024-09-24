@@ -1,6 +1,9 @@
 // libraries
 import { FC } from "react";
 
+// internationalization
+import { useTranslation } from 'react-i18next';
+
 // styles
 import styles from "./loader.module.css";
 
@@ -10,6 +13,9 @@ import spinner from "../../icons/circle-notch-black.svg";
 // content
 
 const Loader: FC = () => {
+  
+  const { t: translate } = useTranslation();
+  
   return (
     <div className={styles.container}>
       <img 
@@ -18,7 +24,7 @@ const Loader: FC = () => {
         className={styles.spinner} 
       />
       <p className={styles.text}>
-        Check In Progress
+        {translate("loading")}
       </p>
     </div>  
   );

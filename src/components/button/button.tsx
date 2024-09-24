@@ -1,6 +1,9 @@
 // libraries
 import { FC } from "react";
 
+// internationalization
+import { useTranslation } from 'react-i18next';
+
 // styles
 import styles from "./button.module.css";
 
@@ -9,6 +12,9 @@ import styles from "./button.module.css";
 type Props = Readonly<{ disabled: boolean }>;
 
 const Button: FC<Props> = ({ disabled }) => {
+  
+  const { t: translate } = useTranslation();
+  
   return (
     <button
       type="submit"
@@ -16,7 +22,7 @@ const Button: FC<Props> = ({ disabled }) => {
       disabled={disabled}
       className={disabled ? `${styles.button} ${styles.disabled}` : styles.button}
     >
-      Check Risk Level
+      {translate("button_action_text")}
     </button>  
   );
 };

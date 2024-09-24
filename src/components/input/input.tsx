@@ -31,7 +31,7 @@ const Input: FC<Props> = ({ value, isValid, onChange }) => {
       onChange={onChange}
       title={translate("invalid_ip_error")}
       pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
-      placeholder="Enter IP address"
+      placeholder={translate("input_placeholder")}
       className={isValid ? styles.input : `${styles.input} ${styles.invalid}`}
     />
   );

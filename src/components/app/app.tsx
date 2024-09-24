@@ -28,11 +28,8 @@ const App: FC = () => {
   const { t: translate } = useTranslation();
   
   const [inputValue, setInputValue] = useState<string>("");
-  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isInputValid, setIsInputValid] = useState<boolean>(true);
   const [submissionError, setSubmissionError] = useState<string>("");
-  
-  const [checkResults, setCheckResults] = useState<Array<CheckResult>>([]);
   
   const clearPage = (): void => {
     setInputValue("");
@@ -45,6 +42,9 @@ const App: FC = () => {
     setInputValue(event.target.value.replaceAll(",", "."));
     setIsInputValid(event.target.validity.valid);
   };
+  
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [checkResults, setCheckResults] = useState<Array<CheckResult>>([]);  
   
   const formSubmitHandler: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
@@ -62,7 +62,7 @@ const App: FC = () => {
         clearPage();
       }
     ).catch(
-      () => setSubmissionError("Something went wrong")
+      () => setSubmissionError(translate("general_error"))
     ).finally(
       () => setIsLoading(false)
     );
@@ -72,9 +72,9 @@ const App: FC = () => {
     <table className={styles.table}>
       <thead className={styles.thead}>
         <tr>
-          <th className={styles.cell}>Target</th>
-          <th className={styles.cell}>Status</th>
-          <th className={styles.cell}>Color</th>
+          <th className={styles.cell}>{translate("target")}</th>
+          <th className={styles.cell}>{translate("status")}</th>
+          <th className={styles.cell}>{translate("color")}</th>
         </tr>
       </thead>
       <tbody className={styles.tbody}>
