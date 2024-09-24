@@ -14,6 +14,30 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.switchLocale {
+  border: 2px solid var(--color-light-gray);
+  border-radius: 5px;
+  color: white;
+  background-color: inherit;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.switchLocale:hover {
+  opacity: 0.5;
+}
+
+.switchLocale:focus {
+  outline-offset: 2px;  
+  outline: 2px solid var(--color-dark-gray);
+}
+
 .tagline {
   margin: 0;
   font-weight: 200;
