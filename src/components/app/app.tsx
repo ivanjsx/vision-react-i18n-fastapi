@@ -10,18 +10,22 @@ import AppHeader from "../app-header/app-header";
 import AppFooter from "../app-footer/app-footer";
 import ResultRow from "../result-row/result-row";
 
+// internationalization
+import { useTranslation } from 'react-i18next';
+
 // styles
 import styles from "./app.module.css";
 
 // utils
 import { checkAddress } from "../../utils/api";
 import { CheckResult } from "../../utils/types";
-import { IP_V4_ERROR } from "../../utils/constants";
 import { validateIPv4 } from "../../utils/validators";
 
 // content
 
 const App: FC = () => {
+  
+  const { t: translate } = useTranslation();
   
   const [inputValue, setInputValue] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -46,7 +50,7 @@ const App: FC = () => {
     event.preventDefault();
     
     if (!validateIPv4(inputValue)) {
-      setSubmissionError(IP_V4_ERROR);
+      setSubmissionError(translate("invalid_ip_error"));
       setIsInputValid(false);
       return;
     };

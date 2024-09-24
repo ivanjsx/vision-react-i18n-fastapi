@@ -1,8 +1,8 @@
 // libraries
 import { ChangeEventHandler, FC } from "react";
 
-// constants
-import { IP_V4_ERROR } from "../../utils/constants";
+// internationalization
+import { useTranslation } from 'react-i18next';
 
 // styles
 import styles from "./input.module.css";
@@ -16,6 +16,9 @@ type Props = Readonly<{
 }>;
 
 const Input: FC<Props> = ({ value, isValid, onChange }) => {
+  
+  const { t: translate } = useTranslation();
+  
   return (
     <input 
       required
@@ -26,7 +29,7 @@ const Input: FC<Props> = ({ value, isValid, onChange }) => {
       name="ip_address"
       inputMode="decimal"
       onChange={onChange}
-      title={IP_V4_ERROR}
+      title={translate("invalid_ip_error")}
       pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
       placeholder="Enter IP address"
       className={isValid ? styles.input : `${styles.input} ${styles.invalid}`}
