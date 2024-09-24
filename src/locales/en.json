@@ -1,0 +1,23 @@
+{    
+    "invalid_ip_error": "Enter a valid IPv4 address",
+    "general_error": "Something went wrong",
+    
+    "tagline": "See Beyond Threats",
+    
+    "input_placeholder": "Enter IP address",
+    "button_action_text": "Check Risk Level",
+    
+    "target": "Target",
+    "status": "Status",
+    "color": "Color",
+    
+    "low_risk": "Low SCA risk level",
+    "high_risk": "High SCA risk level",
+    "medium_risk": "Medium SCA risk level",
+    "unknown_risk": "Cannot determine SCA risk level",
+    
+    "loading": "Loading",
+    
+    "locale_to_switch_to": "Русский",
+    "get_in_touch": "Contact Us At"
+}

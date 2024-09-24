@@ -1,0 +1,23 @@
+{
+    "invalid_ip_error": "Введите валидный IPv4 адрес",
+    "general_error": "Что-то пошло не так",
+    
+    "tagline": "Видеть дальше угроз",
+    
+    "input_placeholder": "Введите IP адрес",
+    "button_action_text": "Узнать уровень риска",
+    
+    "target": "Цель",
+    "status": "Вердикт",
+    "color": "Цвет",
+    
+    "low_risk": "Низкий уровень риска",
+    "high_risk": "Высокий уровень риска",
+    "medium_risk": "Средний уровень риска",
+    "unknown_risk": "Не удаётся определить уровень риска",
+    
+    "loading": "Проверяем",
+    
+    "locale_to_switch_to": "English",
+    "get_in_touch": "Написать нам"
+}
