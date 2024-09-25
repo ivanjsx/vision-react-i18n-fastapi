@@ -16,7 +16,7 @@ const AppHeader: FC = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.name}>VISION</h1>
-      <p className={styles.tagline}>{translate("tagline")}</p>
+      <p className={styles.tagline}>{translate("catchphrases.tagline")}</p>
     </header>
   );
 };

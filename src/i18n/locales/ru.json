@@ -1,0 +1,39 @@
+{
+    "translation": {    
+        "errors": {
+            "general": "Что-то пошло не так",
+            "invalid_ip": "Введите валидный IPv4 адрес"
+        },
+        "locale": {
+            "switch": "Switch to English"
+        },
+        "catchphrases": {
+            "tagline": "Видеть дальше угроз",
+            "contact": "Написать нам"
+        },
+        "controls": {
+            "input": {
+                "placeholder": "Введите IP адрес"
+            },
+            "button": {
+                "text": "Узнать уровень риска"
+            },
+            "loader": {
+                "text": "Проверяем"
+            }
+        },
+        "table": {
+            "header": {
+                "target": "Цель",
+                "status": "Вердикт",
+                "color": "Цвет"
+            }
+        },
+        "resolutions": {
+            "low_risk": "Низкий уровень риска",
+            "high_risk": "Высокий уровень риска",
+            "medium_risk": "Средний уровень риска",
+            "unknown_risk": "Не удаётся определить уровень риска"
+        }
+    }
+}

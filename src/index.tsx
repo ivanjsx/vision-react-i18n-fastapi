@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 import App from "./components/app/app";
 
 // internationalization
-import './i18n';
+import "./i18n/config";
 
 // styles
 import "./index.css";

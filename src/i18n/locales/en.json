@@ -1,0 +1,39 @@
+{
+    "translation": {    
+        "errors": {
+            "general": "Something went wrong",
+            "invalid_ip": "Enter a valid IPv4 address"
+        },
+        "locale": {
+            "switch": "Перейти на русский"
+        },
+        "catchphrases": {
+            "tagline": "See Beyond Threats",
+            "contact": "Contact Us At"
+        },
+        "controls": {
+            "input": {
+                "placeholder": "Enter IP address"
+            },
+            "button": {
+                "text": "Check Risk Level"
+            },
+            "loader": {
+                "text": "Loading"
+            }
+        },
+        "table": {
+            "header": {
+                "target": "Target",
+                "status": "Status",
+                "color": "Color"
+            }
+        },
+        "resolutions": {
+            "low_risk": "Low SCA risk level",
+            "high_risk": "High SCA risk level",
+            "medium_risk": "Medium SCA risk level",
+            "unknown_risk": "Cannot determine SCA risk level"
+        }
+    }
+}

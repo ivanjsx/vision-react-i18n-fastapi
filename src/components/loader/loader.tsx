@@ -24,7 +24,7 @@ const Loader: FC = () => {
         className={styles.spinner} 
       />
       <p className={styles.text}>
-        {translate("loading")}
+        {translate("controls.loader.text")}
       </p>
     </div>  
   );

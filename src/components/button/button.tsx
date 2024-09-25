@@ -22,7 +22,7 @@ const Button: FC<Props> = ({ disabled }) => {
       disabled={disabled}
       className={disabled ? `${styles.button} ${styles.disabled}` : styles.button}
     >
-      {translate("button_action_text")}
+      {translate("controls.button.text")}
     </button>  
   );
 };

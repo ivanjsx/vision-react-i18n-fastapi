@@ -50,7 +50,7 @@ const App: FC = () => {
     event.preventDefault();
     
     if (!validateIPv4(inputValue)) {
-      setSubmissionError(translate("invalid_ip_error"));
+      setSubmissionError(translate("errors.invalid_ip"));
       setIsInputValid(false);
       return;
     };
@@ -62,7 +62,7 @@ const App: FC = () => {
         clearPage();
       }
     ).catch(
-      () => setSubmissionError(translate("general_error"))
+      () => setSubmissionError(translate("errors.general"))
     ).finally(
       () => setIsLoading(false)
     );
@@ -72,9 +72,9 @@ const App: FC = () => {
     <table className={styles.table}>
       <thead className={styles.thead}>
         <tr>
-          <th className={styles.cell}>{translate("target")}</th>
-          <th className={styles.cell}>{translate("status")}</th>
-          <th className={styles.cell}>{translate("color")}</th>
+          <th className={styles.cell}>{translate("table.header.target")}</th>
+          <th className={styles.cell}>{translate("table.header.status")}</th>
+          <th className={styles.cell}>{translate("table.header.color")}</th>
         </tr>
       </thead>
       <tbody className={styles.tbody}>

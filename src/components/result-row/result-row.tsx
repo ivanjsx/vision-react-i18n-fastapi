@@ -21,7 +21,7 @@ const ResultRow: FC<Props> = ({ result }) => {
   return (
     <tr className={styles.row}>
       <td className={styles.target}>{result.ip_address}</td>
-      <td className={styles.status}>{translate(result.result_text)}</td>
+      <td className={styles.status}>{translate(`resolutions.${result.result_text}`)}</td>
       <td className={styles[result.result_color]}></td>
     </tr>    
   );

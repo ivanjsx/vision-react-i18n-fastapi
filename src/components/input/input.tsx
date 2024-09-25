@@ -29,9 +29,9 @@ const Input: FC<Props> = ({ value, isValid, onChange }) => {
       name="ip_address"
       inputMode="decimal"
       onChange={onChange}
-      title={translate("invalid_ip_error")}
+      title={translate("errors.invalid_ip")}
       pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
-      placeholder={translate("input_placeholder")}
+      placeholder={translate("controls.input.placeholder")}
       className={isValid ? styles.input : `${styles.input} ${styles.invalid}`}
     />
   );

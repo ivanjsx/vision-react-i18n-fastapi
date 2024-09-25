@@ -32,10 +32,10 @@ const AppFooter: FC = () => {
         onClick={switchLocale}
         className={`${styles.switchLocale} ${styles.tagline}`}
       >
-        {translate("locale_to_switch_to")}
+        {translate("locale.switch")}
       </button>
       <ul className={styles.contacts}>
-        <p className={styles.tagline}>{translate("get_in_touch")}</p>
+        <p className={styles.tagline}>{translate("catchphrases.contact")}</p>
         <Contact 
           icon={telegram}
           name="Telegram"
