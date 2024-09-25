@@ -6,3 +6,4 @@ build/
 
 # miscellanea
 .DS_Store
+.vscode
