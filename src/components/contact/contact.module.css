@@ -3,8 +3,10 @@
   transition: opacity 0.3s;
 }
 
-.contact:hover {
-  opacity: 0.5;
+@media (hover: hover) {
+  .contact:hover {
+    opacity: 0.5;
+  }
 }
 
 .link {

@@ -29,8 +29,10 @@
   transition: opacity 0.3s;
 }
 
-.switchLocale:hover {
-  opacity: 0.5;
+@media (hover: hover) {
+  .switchLocale:hover {
+    opacity: 0.5;
+  }
 }
 
 .switchLocale:focus {
