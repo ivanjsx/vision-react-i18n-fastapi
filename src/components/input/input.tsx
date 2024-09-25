@@ -2,7 +2,7 @@
 import { ChangeEventHandler, FC } from "react";
 
 // internationalization
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 // styles
 import styles from "./input.module.css";

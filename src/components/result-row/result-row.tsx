@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 // internationalization
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 // types
 import { CheckResult } from "../../utils/types";

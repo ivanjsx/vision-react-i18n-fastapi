@@ -11,7 +11,7 @@ import AppFooter from "../app-footer/app-footer";
 import ResultRow from "../result-row/result-row";
 
 // internationalization
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 // styles
 import styles from "./app.module.css";

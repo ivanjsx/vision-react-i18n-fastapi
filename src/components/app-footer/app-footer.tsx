@@ -5,7 +5,7 @@ import { FC, MouseEventHandler } from "react";
 import Contact from "../contact/contact";
 
 // internationalization
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 // styles
 import styles from "./app-footer.module.css";
