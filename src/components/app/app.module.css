@@ -34,16 +34,12 @@
 
 .error {
   position: absolute;
-  bottom: -30px;
+  bottom: calc(0px - var(--gap-medium) - var(--font-size-medium));
   margin: 0;
+  width: max-content;
   color: red;
   font-size: var(--font-size-medium);
-}
-
-@media screen and (max-width: 600px) {
-  .error {
-    font-size: var(--font-size-small);
-  }
+  text-align: center;
 }
 
 .table {
@@ -68,7 +64,6 @@
 @media screen and (max-width: 600px) {
   .table {
     width: 100%;
-    font-size: var(--font-size-small);
   }
 }
 

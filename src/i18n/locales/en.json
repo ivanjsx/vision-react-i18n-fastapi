@@ -2,7 +2,7 @@
     "translation": {    
         "errors": {
             "general": "Something went wrong",
-            "invalid_ip": "Enter a valid IPv4 address"
+            "invalid_ip": "Invalid IPv4 address"
         },
         "locale": {
             "switch": "Перейти на русский"

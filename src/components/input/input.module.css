@@ -12,12 +12,6 @@
   outline: 2px solid var(--color-dark-gray);
 }
 
-@media screen and (max-width: 600px) {
-  .input {
-    font-size: var(--font-size-small);
-  }
-}
-
 .invalid {
   border-color: red;
 }

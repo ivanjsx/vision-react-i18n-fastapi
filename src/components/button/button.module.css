@@ -14,12 +14,6 @@
   outline: 2px solid var(--color-dark-gray);
 }
 
-@media screen and (max-width: 600px) {
-  .button {
-    font-size: var(--font-size-small);
-  }
-}
-
 .disabled {
   background-color: var(--color-dark-gray);
   cursor: not-allowed;
