@@ -30,7 +30,7 @@ const ResultTable: FC<Props> = ({ results }) => {
           <th className={styles.header}>{translate("table.header.color")}</th>
         </tr>
       </thead>
-      <tbody className={styles.body}>
+      <tbody>
         {results.map(
           (result, index) => (
             <ResultRow key={index} result={result} />

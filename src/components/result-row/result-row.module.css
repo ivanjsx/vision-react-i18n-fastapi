@@ -1,5 +1,14 @@
 .row {
   padding: 5px;
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.row:first-of-type {
+  border-top: 1px solid var(--color-dark-gray);
+}
+
+.row:last-of-type {
+  border-bottom: none;
 }
 
 .target {

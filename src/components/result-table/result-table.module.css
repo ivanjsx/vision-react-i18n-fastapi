@@ -26,15 +26,3 @@
 .header {
   padding: 5px;
 }
-
-.body .row {
-  border-bottom: 1px solid var(--color-dark-gray)
-}
-
-.body .row:first-child {
-  border-top: 1px solid var(--color-dark-gray)
-}
-
-.body .row:last-child {
-  border-bottom: none;
-}
