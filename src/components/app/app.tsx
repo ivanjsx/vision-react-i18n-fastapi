@@ -8,7 +8,7 @@ import AppHeader from "../app-header/app-header";
 import AppFooter from "../app-footer/app-footer";
 import FormInput from "../form-input/form-input";
 import FormButton from "../form-button/form-button";
-import ResultRow from "../result-row/result-row";
+import ResultTable from "../result-table/result-table";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -68,25 +68,6 @@ const App: FC = () => {
     );
   };
   
-  const checkResultsTable = (
-    <table className={styles.table}>
-      <thead className={styles.thead}>
-        <tr>
-          <th className={styles.cell}>{translate("table.header.target")}</th>
-          <th className={styles.cell}>{translate("table.header.status")}</th>
-          <th className={styles.cell}>{translate("table.header.color")}</th>
-        </tr>
-      </thead>
-      <tbody className={styles.tbody}>
-        {checkResults.map(
-          (result, index) => (
-            <ResultRow key={index} result={result} />
-          )
-        )}
-      </tbody>
-    </table>
-  );
-  
   return (
     <div className={styles.app}>
       <AppHeader />
@@ -105,7 +86,7 @@ const App: FC = () => {
           <p className={styles.error}>{submissionError}</p>
         </form>      
         
-        {checkResults.length > 0 && checkResultsTable}
+        {checkResults.length > 0 && <ResultTable results={checkResults} />}
       </main>
       
       {isLoading && (<Modal children={<Loader />} />)}
