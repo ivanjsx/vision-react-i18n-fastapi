@@ -2,7 +2,7 @@
 import { FC, MouseEventHandler } from "react";
 
 // components
-import Contact from "../contact/contact";
+import ContactIcon from "../contact-icon/contact-icon";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -36,7 +36,7 @@ const AppFooter: FC = () => {
       </button>
       <ul className={styles.contacts}>
         <p className={styles.tagline}>{translate("catchphrases.contact")}</p>
-        <Contact 
+        <ContactIcon 
           icon={telegram}
           name="Telegram"
           link="https://t.me/mason_ivan"

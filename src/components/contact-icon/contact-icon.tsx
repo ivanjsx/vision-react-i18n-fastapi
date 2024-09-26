@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 // styles
-import styles from "./contact.module.css";
+import styles from "./contact-icon.module.css";
 
 // content
 
@@ -12,7 +12,7 @@ type Props = Readonly<{
   icon: string;
 }>;
 
-const Contact: FC<Props> = ({ name, link, icon }) => {
+const ContactIcon: FC<Props> = ({ name, link, icon }) => {
   return (
     <li className={styles.contact}>
       <a href={link} className={styles.link} target="_blank" rel="noreferrer">
@@ -22,4 +22,4 @@ const Contact: FC<Props> = ({ name, link, icon }) => {
   );
 };  
 
-export default Contact;
+export default ContactIcon;

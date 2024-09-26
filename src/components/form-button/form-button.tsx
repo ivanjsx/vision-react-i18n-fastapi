@@ -5,13 +5,13 @@ import { FC } from "react";
 import { useTranslation } from "react-i18next";
 
 // styles
-import styles from "./button.module.css";
+import styles from "./form-button.module.css";
 
 // content
 
 type Props = Readonly<{ disabled: boolean }>;
 
-const Button: FC<Props> = ({ disabled }) => {
+const FormButton: FC<Props> = ({ disabled }) => {
   
   const { t: translate } = useTranslation();
   
@@ -27,4 +27,4 @@ const Button: FC<Props> = ({ disabled }) => {
   );
 };
 
-export default Button;
+export default FormButton;

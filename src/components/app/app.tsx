@@ -2,12 +2,12 @@
 import { ChangeEventHandler, FC, FormEventHandler, useState } from "react";
 
 // components
-import Input from "../input/input";
 import Modal from "../modal/modal";
 import Loader from "../loader/loader";
-import Button from "../button/button";
 import AppHeader from "../app-header/app-header";
 import AppFooter from "../app-footer/app-footer";
+import FormInput from "../form-input/form-input";
+import FormButton from "../form-button/form-button";
 import ResultRow from "../result-row/result-row";
 
 // internationalization
@@ -96,12 +96,12 @@ const App: FC = () => {
           className={styles.form} 
           onSubmit={formSubmitHandler}
         >
-          <Input 
+          <FormInput 
             value={inputValue}
             isValid={isInputValid}
             onChange={inputChangeHandler}
           />
-          <Button disabled={inputValue.length > 0 && !isInputValid} />
+          <FormButton disabled={inputValue.length > 0 && !isInputValid} />
           <p className={styles.error}>{submissionError}</p>
         </form>      
         

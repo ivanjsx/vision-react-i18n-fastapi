@@ -5,7 +5,7 @@ import { ChangeEventHandler, FC } from "react";
 import { useTranslation } from "react-i18next";
 
 // styles
-import styles from "./input.module.css";
+import styles from "./form-input.module.css";
 
 // content
 
@@ -15,7 +15,7 @@ type Props = Readonly<{
   onChange: ChangeEventHandler<HTMLInputElement>;
 }>;
 
-const Input: FC<Props> = ({ value, isValid, onChange }) => {
+const FormInput: FC<Props> = ({ value, isValid, onChange }) => {
   
   const { t: translate } = useTranslation();
   
@@ -37,4 +37,4 @@ const Input: FC<Props> = ({ value, isValid, onChange }) => {
   );
 };
 
-export default Input;
+export default FormInput;
