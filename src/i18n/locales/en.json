@@ -8,6 +8,7 @@
             "switch": "Перейти на русский"
         },
         "catchphrases": {
+            "name": "VISION",
             "tagline": "See Beyond Threats",
             "contact": "Contact Us At"
         },
@@ -30,10 +31,10 @@
             }
         },
         "resolutions": {
-            "low_risk": "Low SCA risk level",
-            "high_risk": "High SCA risk level",
-            "medium_risk": "Medium SCA risk level",
-            "unknown_risk": "Cannot determine SCA risk level"
+            "low_risk": "Low risk of supply chain attacks",
+            "high_risk": "High risk of supply chain attacks",
+            "medium_risk": "Medium risk of supply chain attacks",
+            "unknown_risk": "Unable to determine risk of supply chain attacks"
         }
     }
 }
