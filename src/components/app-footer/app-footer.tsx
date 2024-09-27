@@ -1,5 +1,5 @@
 // libraries
-import { FC, MouseEventHandler } from "react";
+import { FC, MouseEventHandler, memo, useEffect } from "react";
 
 // components
 import ContactIcon from "../contact-icon/contact-icon";
@@ -21,9 +21,15 @@ const AppFooter: FC = () => {
   const { t: translate, i18n } = useTranslation();
   
   const switchLocale: MouseEventHandler<HTMLButtonElement> = () => {
-    const currentLanguage = i18n.language;
-    i18n.changeLanguage(currentLanguage === "en" ? "ru" : "en");
+    i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
+  
+  useEffect(
+    () => {
+      document.documentElement.lang = i18n.language;
+    },
+    [i18n.language]
+  );
   
   return (
     <footer className={styles.footer}>
@@ -52,4 +58,4 @@ const AppFooter: FC = () => {
   );
 };
 
-export default AppFooter;
+export default memo(AppFooter);
