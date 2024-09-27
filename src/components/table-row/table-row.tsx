@@ -1,5 +1,5 @@
 // libraries
-import { FC } from "react";
+import { FC, memo } from "react";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -8,13 +8,13 @@ import { useTranslation } from "react-i18next";
 import { CheckResult } from "../../utils/types";
 
 // styles
-import styles from "./result-row.module.css";
+import styles from "./table-row.module.css";
 
 // content
 
 type Props = Readonly<{ result: CheckResult }>;
 
-const ResultRow: FC<Props> = ({ result }) => {
+const TableRow: FC<Props> = ({ result }) => {
   
   const { t: translate } = useTranslation();
   
@@ -27,4 +27,4 @@ const ResultRow: FC<Props> = ({ result }) => {
   );
 };
 
-export default ResultRow;
+export default memo(TableRow);
