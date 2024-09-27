@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 400px) {
   .footer {
     flex-direction: column;
   }
@@ -45,6 +45,7 @@
   font-weight: 200;
   font-size: var(--font-size-medium);
   font-style: normal;
+  text-align: center;
 }
 
 .contacts {
@@ -53,4 +54,5 @@
   list-style: none;
   display: flex;
   gap: var(--gap-medium);
+  align-items: center; 
 }

@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./app-footer.module.css";
 
 // icons
+import github from "../../icons/github-white.svg";
 import telegram from "../../icons/telegram-white.svg";
 
 // content
@@ -38,9 +39,14 @@ const AppFooter: FC = () => {
         <p className={styles.tagline}>{translate("catchphrases.contact")}</p>
         <ContactIcon 
           icon={telegram}
-          name="Telegram"
+          name="telegram"
           link="https://t.me/mason_ivan"
         />
+        <ContactIcon 
+          icon={github}
+          name="github"
+          link="https://github.com/ivanjsx"
+        />        
       </ul>
     </footer>      
   );
