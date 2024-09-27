@@ -1,5 +1,5 @@
 // libraries
-import { ChangeEventHandler, FC } from "react";
+import { ChangeEventHandler, FC, memo } from "react";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -37,4 +37,4 @@ const FormInput: FC<Props> = ({ value, isValid, onChange }) => {
   );
 };
 
-export default FormInput;
+export default memo(FormInput);

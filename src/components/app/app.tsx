@@ -3,11 +3,11 @@ import { FC, useState } from "react";
 
 // components
 import Form from "../form/form";
+import Table from "../table/table";
 import Modal from "../modal/modal";
 import Loader from "../loader/loader";
 import AppHeader from "../app-header/app-header";
 import AppFooter from "../app-footer/app-footer";
-import ResultTable from "../result-table/result-table";
 
 // styles
 import styles from "./app.module.css";
@@ -32,7 +32,7 @@ const App: FC = () => {
           isLoadingSetter={setIsLoading} 
         />
         
-        {results.length > 0 && <ResultTable results={results} />}
+        {results.length > 0 && <Table results={results} />}
       </main>
       
       {isLoading && (<Modal children={<Loader />} />)}

@@ -1,5 +1,5 @@
 // libraries
-import { FC } from "react";
+import { FC, memo } from "react";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -21,4 +21,4 @@ const AppHeader: FC = () => {
   );
 };
 
-export default AppHeader;
+export default memo(AppHeader);

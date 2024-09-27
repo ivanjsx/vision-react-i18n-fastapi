@@ -1,5 +1,5 @@
 // libraries
-import { FC } from "react";
+import { FC, memo } from "react";
 
 // internationalization
 import { useTranslation } from "react-i18next";
@@ -27,4 +27,4 @@ const FormButton: FC<Props> = ({ disabled }) => {
   );
 };
 
-export default FormButton;
+export default memo(FormButton);

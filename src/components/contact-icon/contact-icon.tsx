@@ -1,5 +1,5 @@
 // libraries
-import { FC } from "react";
+import { FC, memo } from "react";
 
 // styles
 import styles from "./contact-icon.module.css";
@@ -22,4 +22,4 @@ const ContactIcon: FC<Props> = ({ name, link, icon }) => {
   );
 };  
 
-export default ContactIcon;
+export default memo(ContactIcon);

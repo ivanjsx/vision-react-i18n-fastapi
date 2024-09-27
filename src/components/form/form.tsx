@@ -1,6 +1,7 @@
 // libraries
 import {
   FC,
+  memo,
   Dispatch,
   useState,
   useCallback,
@@ -96,4 +97,4 @@ const Form: FC<Props> = ({ isLoadingSetter, resultsSetter }) => {
   );
 };
 
-export default Form;
+export default memo(Form);
