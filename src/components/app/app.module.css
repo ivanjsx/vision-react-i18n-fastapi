@@ -16,28 +16,3 @@
   
   background-color: var(--color-primary);
 }
-
-.form {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-medium);
-  position: relative;
-}
-
-@media screen and (max-width: 460px) {
-  .form {
-    flex-direction: column;
-  }
-}
-
-.error {
-  position: absolute;
-  bottom: calc(0px - var(--gap-medium) - var(--font-size-medium));
-  margin: 0;
-  width: max-content;
-  color: red;
-  font-size: var(--font-size-medium);
-  text-align: center;
-}
