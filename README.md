@@ -10,9 +10,9 @@ Ultimately, this website is designed to help you make informed decisions when se
 
 ## See It In Action
 
-Frontend: [vision.ivanjsx.com](https://vision.ivanjsx.com)
+The frontend is optimized for **mobile, tablet, and desktop views** and can be accessed through your browser of choice at [vision.ivanjsx.com](https://vision.ivanjsx.com).
 
-Backend: [api.vision.ivanjsx.com](https://api.vision.ivanjsx.com)
+The backend is accessible at [api.vision.ivanjsx.com](https://api.vision.ivanjsx.com).
 
 ## My Role In It
 
